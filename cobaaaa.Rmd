@@ -1,0 +1,141 @@
+---
+title: "mengintegrasikan LaTex"
+author: "tsabiita"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# # Contoh Penggunaan LaTeX dalam R-Markdown
+
+
+Dalam bagian ini, kita akan membahas beberapa konsep matematika penting.
+
+
+## Persamaan Kuadrat
+
+
+Bentuk umum persamaan kuadrat adalah:
+
+$$ax^2 + bx + c = 0$$
+
+dengan $a \neq 0$. Akar-akar persamaan ini dapat ditemukan menggunakan rumus kuadrat:
+
+$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+
+
+## Integral Tentu
+
+
+Integral tentu dari fungsi $f(x)$ dari $a$ sampai $b$ didefinisikan sebagai:
+
+$$ \int_{a}^{b} f(x) dx = F(b) - F(a) $$
+di mana $F'(x) = f(x)$.
+
+
+## Limit Fungsi
+
+
+Limit fungsi $f(x)$ ketika $x$ mendekati $c$ ditulis sebagai:
+
+$$ \lim_{x \to c} f(x) = L $$
+
+
+## Matriks
+
+
+Contoh matriks 2x2 adalah:
+
+$$
+
+A = \begin{pmatrix}
+
+1 & 2 \\
+
+3 & 4
+
+\end{pmatrix}
+
+$$
+
+
+## Fungsi Piecewise
+
+
+Fungsi nilai absolut dapat didefinisikan sebagai fungsi piecewise:
+
+$$
+
+|x| = \begin{cases}
+
+x & \text{jika } x \ge 0 \\
+
+-x & \text{jika } x < 0
+
+\end{cases}
+
+$$
+
+
+## Simbol Yunani
+
+
+Dalam fisika, kita sering menggunakan simbol Yunani seperti $\alpha$, $\beta$, dan $\gamma$. Konstanta pi ($\pi$) juga sangat penting.
+ 
+# Beberapa Format Persamaan yang Berdampingan atau Sejajar
+
+Contoh 1:
+
+\begin{align}
+
+y &= mx + c \\
+y_1 &= mx_1 + c \\
+
+y_2 &= mx_2 + c
+
+\end{align}
+
+
+Contoh 2:
+
+\begin{align*}
+
+a^2 + b^2 &= c^2 \\
+
+(3)^2 + (4)^2 &= 5^2 \\
+
+9 + 16 &= 25
+
+\end{align*}
+
+
+Contoh 3:
+
+\begin{eqnarray}
+
+(a+b)^2 &=& a^2 + 2ab + b^2 \\
+
+(a-b)^2 &=& a^2 - 2ab + b^2
+
+\end{eqnarray}
+## Format Persamaan yang terpusat
+
+\begin{gather}
+
+a + b = c \\
+
+d + e = f \\
+
+g + h = i
+
+\end{gather}
+
+
+\begin{gather*}
+
+1 + 1 = 2 \\
+
+2 + 2 = 4 \\
+
+3 + 3 = 6
+
+\end{gather*}

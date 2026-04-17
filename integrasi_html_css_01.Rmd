@@ -1,0 +1,124 @@
+---
+title: "integrasi_html_css_01"
+author: "tsabiita"
+date: "`r Sys.Date()`"
+output: html_document
+toc: true
+toc_depth: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(ggplot2)
+```
+
+# **Pendahuluan**
+
+Dokumen ini menyajikan hasil analisis data dengan memanfaatkan **R-Markdown** sebagai alat utama dalam pengolahan dan penyusunan laporan. Dengan integrasi **HTML**, tampilan laporan menjadi lebih _dinamis_ dan **fleksibel**, memungkinkan penyajian tabel, gambar, serta elemen interaktif yang tidak dapat dicapai hanya dengan Markdown biasa.
+
+
+Kombinasi kedua teknologi ini memberikan kemudahan dalam menyusun laporan yang tidak hanya **informatif**, tetapi juga lebih **profesional** dan mudah dibaca. Selain itu, penggunaan **CSS** dalam HTML semakin memperkaya estetika tampilan, menjadikan dokumen lebih menarik dan sesuai dengan standar penyajian visual yang baik.
+
+Dengan pendekatan ini, analisis data dapat dikomunikasikan secara lebih **jelas** dan **efektif** kepada pembaca.
+
+
+🔗 **Referensi tambahan:**
+
+[Dokumentasi R-Markdown](https://rmarkdown.rstudio.com/)
+
+
+# menggunakan tag html
+
+<h1>Keunggulan R-Markdown</h1>
+
+
+<p><strong>R-Markdown</strong> memberikan kemudahan dalam menyusun laporan berbasis data dengan struktur yang ringkas dan fleksibel.</p>
+
+
+<p>Dengan dukungan <strong>HTML</strong>, pengguna dapat memperkaya tampilan dokumen menggunakan elemen seperti tabel, gambar, dan format teks yang lebih <em>variatif</em>.</p>
+
+
+<p>Selain itu, integrasi dengan <strong>CSS</strong> memungkinkan personalisasi gaya agar laporan lebih <em>estetis</em> dan profesional, mulai dari pemilihan warna, font, hingga tata letak elemen.</p>
+
+
+<p>Kombinasi ketiga teknologi ini membantu menyampaikan analisis data secara lebih <strong>jelas</strong> dan <strong>terstruktur</strong>, sehingga pembaca dapat memahami hasil dengan lebih mudah.</p>
+
+
+<p>Dengan pendekatan ini, penyusunan laporan menjadi lebih <strong>efisien</strong> dan menarik tanpa mengorbankan keakuratan informasi yang disajikan.</p>
+
+
+<p>🔗 <a href="https://rmarkdown.rstudio.com/">Pelajari lebih lanjut tentang R-Markdown</a></p>
+
+
+
+## **Data yang Digunakan**
+
+Data dalam laporan ini bersumber dari dataset **mtcars**, yang memuat informasi tentang spesifikasi kendaraan.
+
+
+---
+
+
+## 📊 **Ringkasan Data**
+```{r}
+library(mtcars)
+```
+
+## Visualisasi Data
+```{r}
+ggplot(mtcars, aes(x=mpg, y=hp)) +
+geom_point(color="blue") +
+theme_minimal()
+```
+
+## Membuat Tabel dengan HTML
+
+<table border="1">
+
+<tr>
+
+<th>Mobil</th>
+
+<th>MPG</th>
+
+<th>HP</th>
+
+</tr>
+
+<tr>
+
+<td>Ford Mustang</td>
+
+<td>18</td>
+
+<td>290</td>
+
+</tr>
+
+<tr>
+
+<td>Chevrolet Camaro</td>
+
+<td>22</td>
+
+<td>275</td>
+
+</tr>
+
+</table>
+
+
+## Menambahkan Gambar
+
+### gambar dengan sintaks Markdown
+
+![Grafik Penjualan](sales_chart.png)
+
+
+### gambar dengan tag HTML
+
+<img src="sales_chart.png" width="600px">
